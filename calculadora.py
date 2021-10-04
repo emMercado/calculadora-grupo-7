@@ -26,7 +26,17 @@ class MiVentana(QMainWindow):
         self.division.clicked.connect(self.dividir)
         self.igual.clicked.connect(self.resultado)
         self.limpiar.clicked.connect(self.borrar)
-    
+        self.potencia.clicked.connect(self.potenciar)
+
+    def potenciar(self):
+        if(self.operador1 == 0):
+            self.operador1 = int(self.Calculo.text())
+            self.Calculo.setText("")
+            self.operacion = "potencia"
+        else:
+            self.operador2 = int(self.Calculo.text())
+            self.Calculo.setText(str(pow(self.operador1, self.operador2)))
+
     def borrar(self):
         self.operador1 = 0
         self.operador2 = 0
@@ -59,6 +69,9 @@ class MiVentana(QMainWindow):
         elif(self.operacion == "division"):
             self.operador2 = int(self.Calculo.text())
             self.Calculo.setText(str(self.operador1/self.operador2))
+        elif(self.operacion == "potencia"):
+            self.operador2 = int(self.Calculo.text())
+            self.Calculo.setText(str(pow(self.operador1, self.operador2)))
 
 
     #Eventos de asignación de valores al label
