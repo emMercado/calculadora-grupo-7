@@ -26,6 +26,8 @@ class MiVentana(QMainWindow):
         self.division.clicked.connect(self.dividir)
         self.igual.clicked.connect(self.resultado)
         self.limpiar.clicked.connect(self.borrar)
+        self.resta.clicked.connect(self.restar)
+       # self.raiz.clicked.connect(self.raiz)
     
     def borrar(self):
         self.operador1 = 0
@@ -51,15 +53,38 @@ class MiVentana(QMainWindow):
             self.operador2 = int(self.Calculo.text())
             self.Calculo.setText(str(self.operador1+self.operador2))
 
+
+    def restar(self):
+        if(self.operador1 == 0):
+            self.operador1 = int(self.Calculo.text())
+            self.Calculo.setText("")
+            self.operacion = "resta"
+        else:
+            self.operador2 = int(self.Calculo.text())
+            self.Calculo.setText(str(self.operador1-self.operador2))
+
+
     def resultado(self):
         #Se procede a la operación dependiendo del tipo y siempre y cuando este determinado el primer operador.
         if(self.operacion == "suma"):
             self.operador2 = int(self.Calculo.text())
             self.Calculo.setText(str(self.operador1+self.operador2))
+
         elif(self.operacion == "division"):
             self.operador2 = int(self.Calculo.text())
-            self.Calculo.setText(str(self.operador1/self.operador2))
+            self.Calculo.setText(str(self.operador1/self.operador2)) 
+            
+        if(self.operacion == "resta"):
+            self.operador2 = int(self.Calculo.text())
+            self.Calculo.setText(str(self.operador1-self.operador2))
+        
+        elif(self.operacion == "raiz"):
+            self.operador2 = int(self.Calculo.text())
+            self.Calculo.setText(str(self.operador1/self.operador2))    
 
+    
+       
+        
 
     #Eventos de asignación de valores al label
     def click_1(self):
@@ -91,6 +116,10 @@ class MiVentana(QMainWindow):
     
     def click_0(self): 
         self.Calculo.setText(self.Calculo.text() + "0")
+    def click_raiz(self): 
+        self.Calculo.setText(self.Calculo.text() + "=V")
+           
+
 
 app = QApplication([])
 win = MiVentana()
