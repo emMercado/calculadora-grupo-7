@@ -26,11 +26,22 @@ class MiVentana(QMainWindow):
         self.division.clicked.connect(self.dividir)
         self.igual.clicked.connect(self.resultado)
         self.limpiar.clicked.connect(self.borrar)
+        self.borrardig.clicked.connect(self.BorrarDig)
     
     def borrar(self):
         self.operador1 = 0
         self.operador2 = 0
         self.Calculo.setText("")
+    
+    def BorrarDig(self):
+        p = self.Calculo.text()
+        pa = ""
+        for i in range(len(p)):
+            if (i == (len(p)-1)):
+                pa += ""
+            else:
+                pa += p[i]
+            self.Calculo.setText(str(pa))
 
     def dividir(self):
         if(self.operador1 == 0):

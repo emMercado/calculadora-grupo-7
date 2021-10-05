@@ -17,15 +17,15 @@
    <widget class="QLabel" name="Calculo">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>20</x>
       <y>20</y>
-      <width>211</width>
-      <height>31</height>
+      <width>271</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font-size: 30px
-</string>
+     <string notr="true">font: 28pt &quot;Chilanka&quot;;
+background-color: rgb(170, 255, 255);</string>
     </property>
     <property name="lineWidth">
      <number>1</number>
@@ -261,7 +261,7 @@
    <widget class="QPushButton" name="igual">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>140</x>
       <y>240</y>
       <width>51</width>
       <height>41</height>
@@ -278,7 +278,7 @@
    <widget class="QLineEdit" name="backup">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>100</x>
       <y>310</y>
       <width>113</width>
       <height>20</height>
@@ -288,8 +288,8 @@
    <widget class="QPushButton" name="division">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>90</y>
+      <x>200</x>
+      <y>240</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -316,7 +316,24 @@
 </string>
     </property>
     <property name="text">
-     <string>C</string>
+     <string>AC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="borrardig">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>190</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20px
+</string>
+    </property>
+    <property name="text">
+     <string>DEL</string>
     </property>
    </widget>
   </widget>
