@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>320</width>
-    <height>406</height>
+    <width>328</width>
+    <height>303</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>271</width>
+      <width>291</width>
       <height>51</height>
      </rect>
     </property>
@@ -275,16 +275,6 @@ background-color: rgb(170, 255, 255);</string>
      <string>=</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="backup">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>310</y>
-      <width>113</width>
-      <height>20</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QPushButton" name="division">
     <property name="geometry">
      <rect>
@@ -336,7 +326,7 @@ background-color: rgb(170, 255, 255);</string>
      <string>DEL</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="potencia">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -350,10 +340,10 @@ background-color: rgb(170, 255, 255);</string>
 </string>
     </property>
     <property name="text">
-     <string>x^x</string>
+     <string>x^</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="raiz">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -370,7 +360,7 @@ background-color: rgb(170, 255, 255);</string>
      <string>√</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="coma">
     <property name="geometry">
      <rect>
       <x>140</x>
