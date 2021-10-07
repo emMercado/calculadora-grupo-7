@@ -28,17 +28,25 @@ class MiVentana(QMainWindow):
         self.division.clicked.connect(self.dividir)
         self.igual.clicked.connect(self.resultado)
         self.limpiar.clicked.connect(self.borrar)
+        self.borrardig.clicked.connect(self.BorrarDig)
         self.resta.clicked.connect(self.restar)
         self.raiz.clicked.connect(self.raizar)
         self.potencia.clicked.connect(self.potenciar)
-
-    def raizar(self):
-        self.operacion="raiz"
 
     def borrar(self):
         self.operador1 = 0
         self.operador2 = 0
         self.Calculo.setText("")
+    
+    def BorrarDig(self):
+        p = self.Calculo.text()
+        pa = ""
+        for i in range(len(p)):
+            if (i == (len(p)-1)):
+                pa += ""
+            else:
+                pa += p[i]
+            self.Calculo.setText(str(pa))
 
     def dividir(self):
         if(self.operador1 == 0):
@@ -68,6 +76,9 @@ class MiVentana(QMainWindow):
             self.operador2 = int(self.Calculo.text())
             self.Calculo.setText(str(self.operador1-self.operador2))
             
+    def raizar(self):
+        self.operacion="raiz"
+            
     def potenciar(self):
         if(self.operador1 == 0):
             self.operador1 = int(self.Calculo.text())
@@ -82,7 +93,6 @@ class MiVentana(QMainWindow):
         if(self.operacion == "suma"):
             self.operador2 = int(self.Calculo.text())
             self.Calculo.setText(str(self.operador1+self.operador2))
-
         elif(self.operacion == "division"):
             self.operador2 = int(self.Calculo.text())
             self.Calculo.setText(str(self.operador1/self.operador2))
