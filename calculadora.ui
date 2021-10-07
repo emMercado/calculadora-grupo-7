@@ -336,6 +336,23 @@
      <string>x^</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="raiz">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>150</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20px
+</string>
+    </property>
+    <property name="text">
+     <string>√</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
