@@ -319,17 +319,38 @@
      <string>C</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="potencia">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>190</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20px
+</string>
+    </property>
+    <property name="text">
+     <string>x^</string>
+    </property>
+   </widget>
    <widget class="QPushButton" name="raiz">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>240</y>
+      <x>260</x>
+      <y>150</y>
       <width>51</width>
-      <height>51</height>
+      <height>41</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 20px
+</string>
+    </property>
     <property name="text">
-     <string>=v</string>
+     <string>√</string>
     </property>
    </widget>
   </widget>

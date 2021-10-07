@@ -22,9 +22,7 @@ class MiVentana(QMainWindow):
         self.boton8.clicked.connect(self.click_8)
         self.boton9.clicked.connect(self.click_9)
         self.boton0.clicked.connect(self.click_0)
-        
 
-    
         #Listeners de Eventos de los botones de las operaciones
         self.suma.clicked.connect(self.sumar)
         self.division.clicked.connect(self.dividir)
@@ -32,10 +30,11 @@ class MiVentana(QMainWindow):
         self.limpiar.clicked.connect(self.borrar)
         self.resta.clicked.connect(self.restar)
         self.raiz.clicked.connect(self.raizar)
-       # self.raiz.clicked.connect(self.raiz)
+        self.potencia.clicked.connect(self.potenciar)
 
     def raizar(self):
         self.operacion="raiz"
+
     def borrar(self):
         self.operador1 = 0
         self.operador2 = 0
@@ -60,7 +59,6 @@ class MiVentana(QMainWindow):
             self.operador2 = int(self.Calculo.text())
             self.Calculo.setText(str(self.operador1+self.operador2))
 
-
     def restar(self):
         if(self.operador1 == 0):
             self.operador1 = int(self.Calculo.text())
@@ -69,8 +67,15 @@ class MiVentana(QMainWindow):
         else:
             self.operador2 = int(self.Calculo.text())
             self.Calculo.setText(str(self.operador1-self.operador2))
-
-        
+            
+    def potenciar(self):
+        if(self.operador1 == 0):
+            self.operador1 = int(self.Calculo.text())
+            self.Calculo.setText("")
+            self.operacion = "potencia"
+        else:
+            self.operador2 = int(self.Calculo.text())
+            self.Calculo.setText(str(pow(self.operador1, self.operador2)))
 
     def resultado(self):
         #Se procede a la operación dependiendo del tipo y siempre y cuando este determinado el primer operador.
@@ -80,19 +85,17 @@ class MiVentana(QMainWindow):
 
         elif(self.operacion == "division"):
             self.operador2 = int(self.Calculo.text())
-            self.Calculo.setText(str(self.operador1/self.operador2)) 
-            
+            self.Calculo.setText(str(self.operador1/self.operador2))
         elif(self.operacion == "resta"):
             self.operador2 = int(self.Calculo.text())
             self.Calculo.setText(str(self.operador1-self.operador2))
-        
         elif(self.operacion == "raiz"):
             self.operador2 = int(self.Calculo.text())
-              
+            self.Calculo.setText(str(self.operador1/self.operador2))
+        elif(self.operacion == "potencia"):
+            self.operador2 = int(self.Calculo.text())
+            self.Calculo.setText(str(pow(self.operador1, self.operador2)))
 
-    
-       
-        
 
     #Eventos de asignación de valores al label
     def click_1(self):
@@ -125,10 +128,8 @@ class MiVentana(QMainWindow):
     def click_0(self): 
         self.Calculo.setText(self.Calculo.text() + "0")
     def click_raiz(self): 
-        self.Calculo.setText(self.Calculo.text() + "=V")
+        self.Calculo.setText(self.Calculo.text() + "√")
            
-
-
 app = QApplication([])
 win = MiVentana()
 win.show()
