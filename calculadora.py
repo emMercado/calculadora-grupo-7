@@ -25,6 +25,7 @@ class MiVentana(QMainWindow):
 
         #Listeners de Eventos de los botones de las operaciones
         self.suma.clicked.connect(self.sumar)
+        self.multiplicacion.clicked.connect(self.multiplicar)
         self.division.clicked.connect(self.dividir)
         self.igual.clicked.connect(self.resultado)
         self.limpiar.clicked.connect(self.borrar)
@@ -66,6 +67,16 @@ class MiVentana(QMainWindow):
         else:
             self.operador2 = int(self.Calculo.text())
             self.Calculo.setText(str(self.operador1+self.operador2))
+    
+    def multiplicar(self):
+        #Si ya tiene asignado un operador, agregamos el otro con el mismo botón
+        if(self.operador1 == 0):
+            self.operador1 = int(self.Calculo.text())
+            self.Calculo.setText("")
+            self.operacion = "multiplicacion"
+        else:
+            self.operador2 = int(self.Calculo.text())
+            self.Calculo.setText(str(self.operador1*self.operador2))
 
     def restar(self):
         if(self.operador1 == 0):
@@ -75,10 +86,10 @@ class MiVentana(QMainWindow):
         else:
             self.operador2 = int(self.Calculo.text())
             self.Calculo.setText(str(self.operador1-self.operador2))
-            
+
     def raizar(self):
         self.operacion="raiz"
-            
+
     def potenciar(self):
         if(self.operador1 == 0):
             self.operador1 = int(self.Calculo.text())
@@ -96,12 +107,15 @@ class MiVentana(QMainWindow):
         elif(self.operacion == "division"):
             self.operador2 = int(self.Calculo.text())
             self.Calculo.setText(str(self.operador1/self.operador2))
+        elif(self.operacion == "multiplicacion"):
+            self.operador2 = int(self.Calculo.text())
+            self.Calculo.setText(str(self.operador1*self.operador2))
         elif(self.operacion == "resta"):
             self.operador2 = int(self.Calculo.text())
             self.Calculo.setText(str(self.operador1-self.operador2))
         elif(self.operacion == "raiz"):
-            self.operador2 = int(self.Calculo.text())
-            self.Calculo.setText(str(self.operador1/self.operador2))
+            self.operador1 = int(self.Calculo.text())
+            self.Calculo.setText(str(math.sqrt(self.operador1)))
         elif(self.operacion == "potencia"):
             self.operador2 = int(self.Calculo.text())
             self.Calculo.setText(str(pow(self.operador1, self.operador2)))
