@@ -65,6 +65,7 @@ class MiVentana(QtWidgets.QMainWindow, form_class):
     self.limpiar.clicked.connect(self.borrar)
     self.raiz.clicked.connect(self.raizar)
     self.igual.clicked.connect(self.resultado)
+    self.elevar.clicked.connect(self.elevacion)
 
 #Eventos de asignación de valores al label
 #Expresiones
@@ -139,6 +140,9 @@ class MiVentana(QtWidgets.QMainWindow, form_class):
  def Coma(self):
   self.Calculo.insertPlainText('.');
   self.historial.insertPlainText('.');
+ def elevacion(self):
+    self.Calculo.insertPlainText('**');
+    self.historial.insertPlainText('**');
 
 app = QtWidgets.QApplication(sys.argv)
 MyWindow = MiVentana(None)

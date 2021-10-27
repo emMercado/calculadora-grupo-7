@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>342</width>
-    <height>424</height>
+    <height>441</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,7 +21,7 @@
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>220</y>
+      <y>250</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -33,12 +33,15 @@
     <property name="text">
      <string>5</string>
     </property>
+    <property name="shortcut">
+     <string>5</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="boton6">
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>220</y>
+      <y>250</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -50,12 +53,15 @@
     <property name="text">
      <string>6</string>
     </property>
+    <property name="shortcut">
+     <string>6</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="boton8">
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>270</y>
+      <y>300</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -67,12 +73,15 @@
     <property name="text">
      <string>8</string>
     </property>
+    <property name="shortcut">
+     <string>8</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="coma">
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>320</y>
+      <y>350</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -84,12 +93,15 @@
     <property name="text">
      <string>,</string>
     </property>
+    <property name="shortcut">
+     <string>,</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="boton9">
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>270</y>
+      <y>300</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -101,12 +113,15 @@
     <property name="text">
      <string>9</string>
     </property>
+    <property name="shortcut">
+     <string>9</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="boton0">
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>320</y>
+      <y>350</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -118,12 +133,15 @@
     <property name="text">
      <string>0</string>
     </property>
+    <property name="shortcut">
+     <string>0</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="division">
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>320</y>
+      <y>350</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -135,12 +153,15 @@
     <property name="text">
      <string>/</string>
     </property>
+    <property name="shortcut">
+     <string>/</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="igual">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>320</y>
+      <y>350</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -152,12 +173,15 @@
     <property name="text">
      <string>=</string>
     </property>
+    <property name="shortcut">
+     <string>Return</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="boton3">
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>170</y>
+      <y>200</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -169,12 +193,15 @@
     <property name="text">
      <string>3</string>
     </property>
+    <property name="shortcut">
+     <string>3</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="limpiar">
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>320</y>
+      <y>350</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -186,12 +213,15 @@
     <property name="text">
      <string>AC</string>
     </property>
+    <property name="shortcut">
+     <string>Esc</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="boton7">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>270</y>
+      <y>300</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -203,12 +233,15 @@
     <property name="text">
      <string>7</string>
     </property>
+    <property name="shortcut">
+     <string>7</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="boton1">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>170</y>
+      <y>200</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -220,12 +253,15 @@
     <property name="text">
      <string>1</string>
     </property>
+    <property name="shortcut">
+     <string>1</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="resta">
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>220</y>
+      <y>250</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -237,12 +273,15 @@
     <property name="text">
      <string>-</string>
     </property>
+    <property name="shortcut">
+     <string>-</string>
+    </property>
    </widget>
-   <widget class="QPushButton" name="btpot">
+   <widget class="QPushButton" name="elevar">
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>170</y>
+      <y>200</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -254,12 +293,15 @@
     <property name="text">
      <string>x²</string>
     </property>
+    <property name="shortcut">
+     <string>Ctrl+*</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="potencia">
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>270</y>
+      <y>300</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -271,12 +313,15 @@
     <property name="text">
      <string>*</string>
     </property>
+    <property name="shortcut">
+     <string>*</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="borrardigito">
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>270</y>
+      <y>300</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -288,12 +333,15 @@
     <property name="text">
      <string>DEL</string>
     </property>
+    <property name="shortcut">
+     <string>Backspace</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="raiz">
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>220</y>
+      <y>250</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -305,12 +353,15 @@
     <property name="text">
      <string>√</string>
     </property>
+    <property name="shortcut">
+     <string>Ctrl+NumLock</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="boton4">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>220</y>
+      <y>250</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -322,12 +373,15 @@
     <property name="text">
      <string>4</string>
     </property>
+    <property name="shortcut">
+     <string>4</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="suma">
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>170</y>
+      <y>200</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -339,12 +393,15 @@
     <property name="text">
      <string>+</string>
     </property>
+    <property name="shortcut">
+     <string>+</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="boton2">
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>170</y>
+      <y>200</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -356,14 +413,17 @@
     <property name="text">
      <string>2</string>
     </property>
+    <property name="shortcut">
+     <string>2</string>
+    </property>
    </widget>
    <widget class="QPlainTextEdit" name="Calculo">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>80</y>
+      <y>100</y>
       <width>301</width>
-      <height>71</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="font">
@@ -387,7 +447,7 @@ background-color: rgb(170, 255, 255);</string>
       <x>20</x>
       <y>0</y>
       <width>301</width>
-      <height>71</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="font">
@@ -419,7 +479,7 @@ background-color: rgb(170, 255, 255);</string>
    <zorder>boton7</zorder>
    <zorder>boton1</zorder>
    <zorder>resta</zorder>
-   <zorder>btpot</zorder>
+   <zorder>elevar</zorder>
    <zorder>potencia</zorder>
    <zorder>borrardigito</zorder>
    <zorder>boton4</zorder>
